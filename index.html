@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Geoff Kimball, web developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-size: inherit;
+      }
+
+      html {
+        font-family: 'Inter Ui', 'Helvetica', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        background: #FFDFF2;
+        color: #333;
+      }
+
+      .container {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .intro {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        min-height: 500px;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+      }
+
+      .body {
+        position: relative;
+        margin-top: 100vh;
+        background: rgba(255, 255, 255, 0.95);
+        padding-top: 150px;
+        padding-bottom: 150px;
+      }
+
+        .body::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          bottom: 10px;
+          left: 10px;
+          border: 10px solid #FF44B3;
+          pointer-events: none;
+        }
+
+      .section {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 120px;
+      }
+
+        .section__title {
+          width: 33%;
+          padding-right: 30px;
+        }
+
+        .section__body {
+          flex: 1;
+        }
+
+      .title {
+        position: relative;
+        z-index: 1;
+        color: white;
+        font-size: 184px;
+        font-weight: 900;
+        line-height: 1.16;
+        margin-top: -0.2em;
+      }
+
+      .para {
+        font-size: 40px;
+        line-height: 1.5;
+      }
+
+        .para--strong {
+          font-weight: 900;
+          color: #FF44B3;
+        }
+
+      .link {
+        color: inherit;
+      }
+
+        .link:hover {
+          text-decoration: none;
+        }
+
+      .cat {
+        position: absolute;
+        width: 50%;
+        max-width: 650px;
+        right: 50px;
+        bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+      <header class="intro">
+        <div class="container">
+          <h1 class="title">geoff kimball</h1>
+          <p class="para"><a href="mailto:geoff@geoffkimball.com" class="link">my email</a></p>
+          <p class="para"><a href="https://github.com/gakimball" class="link">my github</a></p>
+          <p class="para"><a href="https://www.linkedin.com/in/geoff-kimball-2a899b117/" class="link">my linkedin</a></p>
+          <img src="cat.png" alt="" class="cat" aria-hidden="true">
+        </div>
+      </header>
+      <article class="body">
+        <div class="container">
+          <section class="section">
+            <div class="section__title">
+              <h2 class="para para--strong">currently</h2>
+            </div>
+            <div class="section__body">
+              <p class="para">freelance web developer</p>
+              <p class="para">open source author</p>
+              <p class="para">existential crisis</p>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section__title">
+              <h2 class="para para--strong">previously</h2>
+            </div>
+            <div class="section__body">
+              <p class="para">technical director @ <a href="https://ueno.co" class="link">ueno</a></p>
+              <p class="para">developer @ <a href="https://ueno.co" class="link">ueno</a></p>
+              <p class="para">developer @ <a href="https://create.io" class="link">create</a></p>
+              <p class="para">design/dev @ <a href="https://zurb.com" class="link">zurb</a></p>
+              <p class="para">design/dev @ <a href="https://www.bsu.edu/about/administrativeoffices/digital-corps" class="link">ball state univ.</a></p>
+            </div>
+          </section>
+          <section class="section">
+            <div class="section__title">
+              <h2 class="para para--strong">clients</h2>
+            </div>
+            <div class="section__body">
+              <p class="para">docker</p>
+              <p class="para">google</p>
+              <p class="para">netgear</p>
+              <p class="para">sap</p>
+              <p class="para">uber</p>
+              <p class="para">uninterrupted</p>
+              <p class="para">visa</p>
+              <p class="para">waze</p>
+            </div>
+          </section>
+          <p class="para para--strong">I'm a JavaScript developer and product designer from Indiana, currently living in the big state of California. I like thinking about systems, and trains, and good API design, and cold, faraway places. I collect vinyl and photos of other peoples' dogs. My life goal is to care less about technology.</p>
+        </div>
+      </article>
+  </body>
+</html>
